@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:dist="http://schemas.android.com/apk/distribution"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mbds.android.nfc.code">
 
@@ -63,53 +62,6 @@
                 android:resource="@xml/nfc_tech_ndef" />
         </activity>
 
-        <activity
-            android:name=".NDEFPushActivity"
-            android:label="@string/nfc_push_ndef"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.nfc.action.TECH_DISCOVERED" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data
-                android:name="android.nfc.action.TECH_DISCOVERED"
-                android:resource="@xml/nfc_tech_ndef" />
-        </activity>
-
-        <activity
-            android:name=".NFCCardReaderActivity"
-            android:label="@string/nfc_card_reader"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.nfc.action.TECH_DISCOVERED" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data
-                android:name="android.nfc.action.TECH_DISCOVERED"
-                android:resource="@xml/nfc_tech_isodep" />
-        </activity>
-
-        <activity
-            android:name=".SEInternalreaderActivity"
-            android:label="@string/nfc_internal_se_reader"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <service
-            android:name=".MyHostAPDUService"
-            android:label="@string/hce_service"
-            android:permission="android.permission.BIND_NFC_SERVICE"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data
-                android:name="android.nfc.cardemulation.host_apdu_service"
-                android:resource="@xml/my_host_metadata" />
-        </service>
-
     </application>
-
-    <dist:module dist:instant="true" />
 
 </manifest>
