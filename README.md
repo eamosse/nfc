@@ -1,22 +1,23 @@
-# nfc
-Ce projet contient plusieurs cas d'utitisation du NFC sur Android. l'objectf principal est de mettre en place la base sur laquelle des étudiants peuvent découvrir le NFC et tester des cas d'utilisation en fonction des besoins définis dans les projets et TPs faits dans le cours.
+# NFC lecture/écriture 
+Ce projet contient les bases permettant d'expérimenter les modes lectures et écritures NFC sur Android. L'objectf principal est de mettre en place les bases sur la-lesquelles des étudiants peuvent expérimenter la lecture et l'écriture de tag NFC.
 
-## Récupérer les sources du projet 
-Forker le projet le projet dans votre espace personnel Github 
+## Tache 1
+Ajouter une section 'Contributions' dans le fichier README.md et y ajouter les membres du groupe (1 étudiant par ligne). 
 
-## Tester l'aplication
-Dans un premier temps, il faudra tester les fonctionnalités suivantes : 
+## Tâche 2
+Compiler et tester l'application
 1. Lecture de tag
 2. Ecriture de tag
-3. Android BEAM (P2P)
 
-## Améliorer le projet 
-Le code du projet n'est pas complet, il faudra modifier les différentes classes en fonction des commentaires qu'elles contiennent. 
-Pour cela, identifiez les TODO pour compléter les différents cas d'utilisation. 
+## Tâche 3
+Améliorer le projet. 
+Le code du projet n'est pas complet, il faudra modifier les classes suivantes: 
+- NfcReaderActivity : A la lecture d'un tag, traiter son contenu en fonction du type de données. Par exemple, lancer un navigateur si c'est une URL; passer un appel si c'est un numéro de téléphone etc. 
+- NfcWriterActivity : Modifier le layout de l'activité afin d'y ajouter un formulaire permettant à l'utilisateur d'entrer le contenu à écrire dans le tag.  
 
 ## Pré Requis
 1. Téléphone Android NFC
 2. 1 ou plusieurs Tags NFC
 
 ## Rendu 
-Chaque modification doit faire l'objet d'un commit dans vos projets respectifs. Le repo final devra être rendu selon les conditions qui vous seront communiquées pendant le cours.
+ATTENTION!!! Ne laissez pas un seul étudiant macher tout le boulot, la note du groupe sera déterminé en fonction des historiques de commits.  
